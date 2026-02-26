@@ -110,27 +110,46 @@ document.addEventListener("DOMContentLoaded", function () {
         const navWrapper = document.createElement("div");
         navWrapper.classList.add("nav-wrapper");
 
-        // Move nav + socials inside wrapper
-        navWrapper.appendChild(nav);
-        navWrapper.appendChild(socials);
+      /* ================================= */
+/* MOBILE HAMBURGER FINAL FIX */
+/* ================================= */
 
-        header.appendChild(navWrapper);
+document.addEventListener("DOMContentLoaded", function () {
 
-        // Create hamburger
-        const toggle = document.createElement("div");
-        toggle.classList.add("menu-toggle");
-        toggle.innerHTML = `
-            <span></span>
-            <span></span>
-            <span></span>
-        `;
+    const header = document.querySelector("header");
+    const nav = document.querySelector("nav");
+    const socials = document.querySelector(".social-icons");
 
-        header.insertBefore(toggle, navWrapper);
+    if (!header || !nav || !socials) return;
 
-        // Toggle click
-        toggle.addEventListener("click", () => {
-            navWrapper.classList.toggle("active");
-        });
+    // Prevent duplicate creation
+    if (document.querySelector(".menu-toggle")) return;
+
+    // Create wrapper
+    const navWrapper = document.createElement("div");
+    navWrapper.classList.add("nav-wrapper");
+
+    navWrapper.appendChild(nav);
+    navWrapper.appendChild(socials);
+
+    header.appendChild(navWrapper);
+
+    // Create toggle
+    const toggle = document.createElement("div");
+    toggle.classList.add("menu-toggle");
+    toggle.innerHTML = `
+        <span></span>
+        <span></span>
+        <span></span>
+    `;
+
+    header.insertBefore(toggle, navWrapper);
+
+    toggle.addEventListener("click", () => {
+        navWrapper.classList.toggle("active");
+    });
+
+});
     }
 });
 
