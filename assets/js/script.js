@@ -94,3 +94,43 @@ function showHeroFade() {
 
 window.addEventListener('load', showHeroFade);
 
+/* ================================= */
+/* AUTO MOBILE HAMBURGER (NO HTML EDIT) */
+/* ================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    if (window.innerWidth <= 768) {
+
+        const header = document.querySelector("header");
+        const nav = document.querySelector("nav");
+        const socials = document.querySelector(".social-icons");
+
+        // Create wrapper
+        const navWrapper = document.createElement("div");
+        navWrapper.classList.add("nav-wrapper");
+
+        // Move nav + socials inside wrapper
+        navWrapper.appendChild(nav);
+        navWrapper.appendChild(socials);
+
+        header.appendChild(navWrapper);
+
+        // Create hamburger
+        const toggle = document.createElement("div");
+        toggle.classList.add("menu-toggle");
+        toggle.innerHTML = `
+            <span></span>
+            <span></span>
+            <span></span>
+        `;
+
+        header.insertBefore(toggle, navWrapper);
+
+        // Toggle click
+        toggle.addEventListener("click", () => {
+            navWrapper.classList.toggle("active");
+        });
+    }
+});
+
