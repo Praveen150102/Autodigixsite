@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | AutoDigiX</title>
+
+<!-- Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+
+
+<style>
+
+/* ================= HEADER BLACK TEXT ================= */
+
+header nav a {
+    color:#000 !important;
+}
+
+header .social-icons a {
+    color:#000 !important;
+}
+
+/* ================= HERO ================= */
+
+.services-hero{
+    padding:160px 20px 100px;
+    text-align:center;
+    background:linear-gradient(135deg,#f4f8ff,#e9f6f4);
+}
+
+.services-hero h1{
+    font-size:56px;
+    color:#0A1F44;
+    font-weight:700;
+    max-width:900px;
+    margin:auto;
+}
+
+.services-hero p{
+    margin-top:25px;
+    font-size:20px;
+    color:#444;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* ================= PILLAR SECTION ================= */
+
+.pillar-section{
+    padding:120px 80px;
+    text-align:center;
+}
+
+.pillar-section:nth-child(even){
+    background:#f9fcff;
+}
+
+.pillar-title{
+    font-size:40px;
+    font-weight:700;
+    color:#0A1F44;
+    margin-bottom:20px;
+}
+
+.pillar-desc{
+    max-width:800px;
+    margin:auto;
+    margin-bottom:70px;
+    color:#555;
+    font-size:17px;
+}
+/* Make Pillar 1 and Pillar 3 text white */
+
+.pillar-section:nth-of-type(2) .pillar-title,
+.pillar-section:nth-of-type(2) .pillar-desc,
+.pillar-section:nth-of-type(4) .pillar-title,
+.pillar-section:nth-of-type(4) .pillar-desc{
+    color: white !important;
+}
+
+/* ================= GRID ================= */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+.service-box{
+    background:white;
+    padding:45px 35px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+
+.service-box:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 60px rgba(0,0,0,0.15);
+}
+
+.service-box i{
+    font-size:38px;
+    color:#00C6B8;
+    margin-bottom:20px;
+}
+
+.service-box h3{
+    margin-bottom:15px;
+    font-size:22px;
+    color:#0A1F44;
+}
+
+.service-box p{
+    font-size:15px;
+    color:#555;
+}
+
+/* ================= PROCESS ================= */
+
+.process-section{
+    padding:120px 80px;
+    background:linear-gradient(135deg,#0A1F44,#00C6B8);
+    color:white;
+    text-align:center;
+}
+
+.process-grid{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:30px;
+}
+
+.process-box{
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:18px;
+}
+
+.process-box h4{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+/* ================= CTA ================= */
+
+.services-cta{
+    padding:120px 20px;
+    text-align:center;
+    background:white;
+}
+
+.services-cta h2{
+    font-size:40px;
+    margin-bottom:30px;
+    color:#0A1F44;
+}
+
+.services-cta a{
+    padding:16px 40px;
+    background:#00C6B8;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.services-cta a:hover{
+    background:#0A1F44;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+    .services-hero h1{
+        font-size:36px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="logo">
+<h1 style="color:#0A1F44;">Auto<span style="color:#00C6B8;">DigiX</span></h1>
+</div>
+
+<nav>
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./services.html">Services</a></li>
+<li><a href="./courses.html">Courses</a></li>
+<li><a href="./about.html">About</a></li>
+<li><a href="./contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="social-icons">
+<a href="https://www.instagram.com/autodigix/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=61585845454471" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://wa.me/918639191907" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="services-hero fade-up">
+<h1>Performance Marketing & Automation Systems That Scale Businesses</h1>
+<p>
+We design structured revenue engines using data-driven campaigns, AI automation,
+and scalable digital infrastructure to create predictable business growth.
+</p>
+</section>
+
+<!-- ================= PERFORMANCE MARKETING ================= -->
+
+<section class="pillar-section fade-up">
+
+<h2 class="pillar-title">Performance Marketing</h2>
+<p class="pillar-desc">
+Data-driven advertising and search systems designed to generate qualified leads and measurable ROI.
+</p>
+
+<div class="service-grid">
+
+<div class="service-box">
+<i class="fab fa-facebook"></i>
+<h3>Meta Ads</h3>
+<p>High-converting Facebook & Instagram campaigns optimized for conversions and ROAS.</p>
+</div>
+
+<div class="service-box">
+<i class="fab fa-google"></i>
+<h3>Google Ads</h3>
+<p>Search, Display & YouTube advertising aligned with landing page conversion strategy.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-search"></i>
+<h3>SEO Optimization</h3>
+<p>On-page, technical and authority SEO strategies to improve rankings and organic growth.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-map-marker-alt"></i>
+<h3>GMB Optimization</h3>
+<p>Local ranking strategies and review growth systems to dominate local search visibility.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-users"></i>
+<h3>Lead Generation</h3>
+<p>Structured funnel systems that convert traffic into high-quality business leads.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-bullhorn"></i>
+<h3>Social Media Marketing</h3>
+<p>Brand positioning, content systems and engagement growth for authority building.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= AUTOMATION ================= -->
+
+<section class="pillar-section">
+
+<h2 class="pillar-title">AI & Business Automation</h2>
+<p class="pillar-desc">
+Streamlined automation workflows that eliminate inefficiencies and increase operational scalability.
+</p>
+
+<div class="service-grid">
+
+<div class="service-box">
+<i class="fas fa-robot"></i>
+<h3>AI Automation</h3>
+<p>AI-powered lead qualification, chat workflows and smart follow-up systems.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-cogs"></i>
+<h3>Business Automation</h3>
+<p>WhatsApp, email and internal workflow automation to reduce manual operations.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-database"></i>
+<h3>CRM Systems</h3>
+<p>Pipeline setup, automated reminders and structured sales tracking dashboards.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= INFRASTRUCTURE ================= -->
+
+<section class="pillar-section">
+
+<h2 class="pillar-title">Digital Infrastructure</h2>
+<p class="pillar-desc">
+High-performance digital assets built to convert visitors into customers.
+</p>
+
+<div class="service-grid">
+
+<div class="service-box">
+<i class="fas fa-laptop-code"></i>
+<h3>Website Development</h3>
+<p>Conversion-focused responsive websites built for speed, SEO and scalability.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-filter"></i>
+<h3>Landing Pages & Funnels</h3>
+<p>High-converting funnel systems aligned with ad campaigns and automation.</p>
+</div>
+
+<div class="service-box">
+<i class="fas fa-chart-line"></i>
+<h3>Analytics & Tracking</h3>
+<p>Advanced tracking integration to measure performance and optimize ROI.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+
+<section class="process-section">
+
+<h2>Our 5-Step Growth Framework</h2>
+
+<div class="process-grid">
+
+<div class="process-box">
+<h4>1. Business Audit</h4>
+<p>Market and competitor analysis.</p>
+</div>
+
+<div class="process-box">
+<h4>2. Strategy Blueprint</h4>
+<p>Funnel and system planning.</p>
+</div>
+
+<div class="process-box">
+<h4>3. Implementation</h4>
+<p>Campaign & automation execution.</p>
+</div>
+
+<div class="process-box">
+<h4>4. Tracking Setup</h4>
+<p>Analytics and performance measurement.</p>
+</div>
+
+<div class="process-box">
+<h4>5. Scale & Optimize</h4>
+<p>Continuous growth optimization.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="services-cta fade-up">
+<h2>Ready to Build a Predictable Growth System?</h2>
+<a href="https://wa.me/918639191907" target="_blank">Book Free Strategy Call</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-col">
+<h3>About Us</h3>
+<p>AutoDigiX is a modern AI Automation & Digital Marketing agency helping businesses scale with structured growth systems.</p>
+</div>
+
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h3>AutoDigiX</h3>
+<p><i class="fas fa-user-tie"></i> Founder: Praveen Gorla</p>
+<p><i class="fas fa-envelope"></i> info@autodigix.in</p>
+<p><i class="fas fa-phone"></i> 8639191907</p>
+
+<div class="footer-social">
+<a href="https://www.instagram.com/autodigix/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=61585845454471" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://wa.me/918639191907" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 AutoDigiX. All Rights Reserved.
+</div>
+
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const elements = document.querySelectorAll(".fade-up");
+
+    function reveal() {
+        const trigger = window.innerHeight * 0.85;
+
+        elements.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if(top < trigger){
+                el.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", reveal);
+    reveal();
+});
+</script>
+<a href="https://wa.me/918639191907" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>

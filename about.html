@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | AutoDigiX</title>
+
+<!-- Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#f4f8ff,#e9f6f4,#f7fbff);
+}
+
+/* HERO */
+.about-hero{
+    padding:140px 20px 80px;
+    text-align:center;
+}
+
+.about-hero h1{
+    font-size:56px;
+    font-weight:700;
+    color:#0A1F44;
+}
+
+.about-hero p{
+    margin-top:20px;
+    font-size:20px;
+    color:#444;
+}
+
+/* STORY */
+.about-story{
+    padding:100px 80px;
+    background:white;
+    text-align:center;
+}
+
+.about-story h2{
+    font-size:38px;
+    margin-bottom:30px;
+    color:#0A1F44;
+}
+
+.about-story p{
+    max-width:900px;
+    margin:auto;
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FOUNDER */
+.founder-section{
+    padding:120px 80px;
+    background:#f4f8ff;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.founder-section img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+.founder-content h2{
+    font-size:34px;
+    margin-bottom:20px;
+    color:#0A1F44;
+}
+
+.founder-content p{
+    font-size:16px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+    padding:120px 0;
+    background:white;
+    overflow:hidden;
+}
+
+.testimonials h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:70px;
+    color:#0A1F44;
+}
+
+.testimonial-track{
+    display:flex;
+    gap:40px;
+    animation:slideLeft 20s linear infinite;
+}
+
+.testimonial-card{
+    min-width:350px;
+    background:#f9fcff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.testimonial-card h3{
+    margin-bottom:10px;
+    color:#0A1F44;
+}
+
+.testimonial-card p{
+    font-size:15px;
+    color:#555;
+    line-height:1.6;
+}
+
+@keyframes slideLeft{
+    0%{ transform:translateX(0); }
+    100%{ transform:translateX(-50%); }
+}
+
+/* CTA */
+.about-cta{
+    padding:120px 20px;
+    background:linear-gradient(135deg,#0A1F44,#00C6B8);
+    text-align:center;
+    color:white;
+}
+
+.about-cta h2{
+    font-size:38px;
+    margin-bottom:30px;
+}
+
+.about-cta a{
+    padding:15px 35px;
+    background:white;
+    color:#0A1F44;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* Fade Animation */
+.fade-element{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all 0.8s ease;
+}
+
+.fade-element.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:992px){
+    .founder-section{
+        grid-template-columns:1fr;
+        padding:80px 20px;
+    }
+}
+
+</style>
+</head>
+
+<body class="about-page">
+
+<!-- HEADER -->
+<header>
+
+<div class="logo">
+<h1 style="color:#0A1F44;">Auto<span style="color:#00C6B8;">DigiX</span></h1>
+</div>
+
+<nav>
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./services.html">Services</a></li>
+<li><a href="./courses.html">Courses</a></li>
+<li><a href="./about.html">About</a></li>
+<li><a href="./contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="social-icons">
+<a href="https://www.instagram.com/autodigix/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=61585845454471" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://wa.me/918639191907" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+</header>
+
+<!-- HERO -->
+<section class="about-hero">
+<h1 class="fade-element">About AutoDigiX</h1>
+<p class="fade-element">AI Automation & Performance Marketing That Drives Real Business Growth</p>
+</section>
+
+<!-- STORY -->
+<section class="about-story">
+<h2 class="fade-element">Our Mission</h2>
+<p class="fade-element">
+AutoDigiX is a performance-focused AI Automation and Digital Marketing agency 
+dedicated to helping businesses scale intelligently in today’s competitive digital 
+landscape. We combine strategic marketing frameworks with automation systems 
+that eliminate inefficiencies and maximize revenue potential.
+
+Digital marketing allows businesses to reach targeted audiences through data-driven 
+campaigns across Google, Meta, search engines, and social platforms. Instead of 
+guesswork, we use analytics, conversion tracking, and performance metrics to 
+continuously optimize campaigns for better ROI.
+
+AI automation enhances this growth by streamlining repetitive processes, improving 
+lead nurturing systems, automating follow-ups, and building scalable workflows. 
+Together, marketing and automation create predictable growth, stronger brand 
+authority, and long-term business sustainability.
+</p>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder-section">
+<img src="assets/images/tpty image.jpg" alt="Praveen Gorla">
+    <div class="founder-content">
+<h2 class="fade-element">Founder – Praveen Gorla</h2>
+<p class="fade-element">
+Praveen Gorla is the founder of AutoDigiX and a performance marketing strategist driven by a clear mission — to help businesses grow intelligently through data, automation, and structured digital systems. With hands-on experience in Google Ads, Meta Ads, SEO, and AI-powered workflows, he has worked closely with brands to build scalable marketing engines that produce measurable, consistent results.
+Rather than focusing on vanity metrics, Praveen emphasizes revenue-driven performance, conversion optimization, and long-term brand positioning. His approach blends analytical precision with strategic creativity — ensuring that every campaign, automation system, and funnel is aligned with real business growth objectives.
+Through AutoDigiX, he aims to empower businesses with modern digital infrastructure — combining performance marketing and AI automation to create predictable growth, operational efficiency, and sustainable scalability.
+
+</p>
+</div>
+</section>
+
+<section class="testimonials">
+<h2 class="fade-element">Client Testimonials</h2>
+
+<div class="testimonial-wrapper">
+<div class="testimonial-track">
+
+<!-- ORIGINAL SET -->
+
+<div class="testimonial-card">
+<h3>Altum Systems</h3>
+<p>AutoDigiX helped us generate high-quality leads through structured performance campaigns and measurable strategies.</p>
+</div>
+
+<div class="testimonial-card">
+<h3>Winsta</h3>
+<p>The automation systems implemented streamlined our internal workflows and improved operational efficiency.</p>
+</div>
+
+<div class="testimonial-card">
+<h3>Deltra</h3>
+<p>Our brand visibility and conversion rates significantly improved with their ad management expertise.</p>
+</div>
+
+<div class="testimonial-card">
+<h3>Suraksha Dental</h3>
+<p>Consistent patient lead generation and improved online presence made a measurable impact on our clinic growth.</p>
+</div>
+
+<!-- DUPLICATE SET FOR LOOP -->
+
+<div class="testimonial-card">
+<h3>Altum Systems</h3>
+<p>AutoDigiX helped us generate high-quality leads through structured performance campaigns and measurable strategies.</p>
+</div>
+
+<div class="testimonial-card">
+<h3>Winsta</h3>
+<p>The automation systems implemented streamlined our internal workflows and improved operational efficiency.</p>
+</div>
+
+<div class="testimonial-card">
+<h3>Deltra</h3>
+<p>Our brand visibility and conversion rates significantly improved with their ad management expertise.</p>
+</div>
+
+<div class="testimonial-card">
+<h3>Suraksha Dental</h3>
+<p>Consistent patient lead generation and improved online presence made a measurable impact on our clinic growth.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="about-cta">
+<h2 class="fade-element">Ready to Scale Your Business?</h2>
+<a href="https://wa.me/918639191907" target="_blank">
+Get Free Consultation
+</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-container">
+
+<div class="footer-col">
+<h3>About Us</h3>
+<p>AutoDigiX is a modern AI Automation & Digital Marketing agency 
+helping businesses scale with performance marketing and automation systems.</p>
+</div>
+
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h3>AutoDigiX</h3>
+<p><i class="fas fa-user"></i> Founder: Praveen Gorla</p>
+<p><i class="fas fa-envelope"></i> info@autodigix.in</p>
+<p><i class="fas fa-phone"></i> 8639191907</p>
+
+<div class="footer-social">
+<a href="https://www.instagram.com/autodigix/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/profile.php?id=61585845454471" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://wa.me/918639191907" target="_blank"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 AutoDigiX. All Rights Reserved.
+</div>
+</footer>
+
+<script>
+const fadeElements = document.querySelectorAll('.fade-element');
+
+function reveal(){
+const trigger = window.innerHeight * 0.85;
+fadeElements.forEach(el=>{
+if(el.getBoundingClientRect().top < trigger){
+el.classList.add('show');
+}
+});
+}
+
+window.addEventListener('scroll', reveal);
+window.addEventListener('load', reveal);
+</script>
+
+<a href="https://wa.me/918639191907" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>

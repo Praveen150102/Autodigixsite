@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses | AutoDigiX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="logo">
+        <h1 style="color:#0A1F44;">Auto<span style="color:#00C6B8;">DigiX</span></h1>
+    </div>
+<nav>
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./services.html">Services</a></li>
+<li><a href="./courses.html">Courses</a></li>
+<li><a href="./about.html">About</a></li>
+<li><a href="./contact.html">Contact</a></li>
+</ul>
+</nav>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/autodigix/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61585845454471" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/918639191907" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="courses-hero">
+
+    <div class="courses-hero-content">
+        <h1 class="fade-in delay-1">
+            Transform Your Career with 
+            <span>Industry-Focused AI Programs</span>
+        </h1>
+
+        <p class="fade-in delay-2">
+            30 Days Live Training • Real Projects • Recordings Access • 
+            Doubt Support • Career-Focused Practical Learning
+        </p>
+
+        <div class="courses-hero-buttons fade-in delay-3">
+            <a href="#course-section" class="btn-primary">Explore Programs</a>
+            <a href="https://wa.me/918639191907" target="_blank" class="btn-secondary">
+                Talk to Advisor
+            </a>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- ================= COURSES ================= -->
+<section class="courses-section" id="course-section">
+
+    <h2 class="section-title fade-up">Our Premium Training Programs</h2>
+
+    <div class="courses-grid">
+
+        <!-- DIGITAL MARKETING WITH AI -->
+        <div class="course-card fade-up delay-1">
+
+            <div class="price-tag">₹2,999</div>
+
+            <h3>Digital Marketing with AI</h3>
+            <p class="course-subtitle">Complete Performance Marketing Mastery</p>
+
+            <div class="course-meta">
+                <span>📅 Duration: 30 Days</span>
+                <span>🎥 Live Classes + Recordings</span>
+                <span>❓ Live Doubt Sessions</span>
+                <span>🤝 1-on-1 Interaction Support</span>
+            </div>
+
+            <ul>
+                <li>✔ Meta Ads (Facebook & Instagram)</li>
+                <li>✔ Google Ads (Search, Display, YouTube)</li>
+                <li>✔ SEO (On-Page & Off-Page)</li>
+                <li>✔ Lead Generation Funnels</li>
+                <li>✔ AI Tools for Marketing Automation</li>
+                <li>✔ Content Strategy & Branding</li>
+                <li>✔ Real-Time Campaign Projects</li>
+                <li>✔ Internship Support</li>
+                <li>✔ Certificate After Completion</li>
+            </ul>
+
+            <a href="https://rzp.io/rzp/whMcDOtc"
+               target="_blank"
+               class="course-btn">
+               Enroll Now
+            </a>
+
+        </div>
+
+
+        <!-- WEB DEVELOPMENT WITH AI -->
+        <div class="course-card premium fade-up delay-2">
+
+            <div class="price-tag premium-price">₹5,999</div>
+
+            <h3>Web Development with AI</h3>
+            <p class="course-subtitle">Frontend Development + AI Assisted Coding</p>
+
+            <div class="course-meta">
+                <span>📅 Duration: 30 Days</span>
+                <span>🎥 Live Classes + Recordings</span>
+                <span>❓ Live Doubt Sessions</span>
+                <span>🤝 1-on-1 Interaction Support</span>
+            </div>
+
+            <ul>
+                <li>✔ HTML5 (Semantic Structure)</li>
+                <li>✔ CSS3 (Flexbox, Grid, Responsive Design)</li>
+                <li>✔ JavaScript (Core Concepts)</li>
+                <li>✔ Website Deployment & Hosting</li>
+                <li>✔ Git & Version Control Basics</li>
+                <li>✔ AI Assisted Coding Workflow</li>
+                <li>✔ Real Website Project Development</li>
+                <li>✔ Internship Support</li>
+                <li>✔ Certificate After Completion</li>
+            </ul>
+
+            <a href="https://rzp.io/rzp/dxXNSM2D"
+               target="_blank"
+               class="course-btn">
+               Enroll Now
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= FADE SCRIPT ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const fadeUp = document.querySelectorAll(".fade-up");
+    const fadeIn = document.querySelectorAll(".fade-in");
+
+    fadeIn.forEach(el => el.classList.add("show"));
+
+    const reveal = () => {
+        const trigger = window.innerHeight * 0.85;
+
+        fadeUp.forEach(el => {
+            if(el.getBoundingClientRect().top < trigger){
+                el.classList.add("show");
+            }
+        });
+    };
+
+    window.addEventListener("scroll", reveal);
+    reveal();
+});
+</script>
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-choose">
+
+    <h2 class="section-title fade-up">Why Choose AutoDigiX Courses?</h2>
+
+    <div class="why-grid">
+
+        <div class="why-card fade-up delay-1">
+            <i class="fas fa-briefcase"></i>
+            <h3>Real-Time Practical Training</h3>
+            <p>
+                Learn by working on real projects, live campaigns, and 
+                hands-on implementations — not just theory.
+            </p>
+        </div>
+
+        <div class="why-card fade-up delay-2">
+            <i class="fas fa-robot"></i>
+            <h3>AI-Integrated Learning</h3>
+            <p>
+                We teach modern AI tools and workflows that professionals 
+                actually use in marketing and development today.
+            </p>
+        </div>
+
+        <div class="why-card fade-up delay-3">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Live Doubt & 1-on-1 Support</h3>
+            <p>
+                Direct mentor interaction, live doubt sessions, and 
+                personal guidance throughout the program.
+            </p>
+        </div>
+
+        <div class="why-card fade-up delay-1">
+            <i class="fas fa-certificate"></i>
+            <h3>Industry Recognized Certificate</h3>
+            <p>
+                Receive a completion certificate that strengthens 
+                your resume and professional credibility.
+            </p>
+        </div>
+
+        <div class="why-card fade-up delay-2">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Career-Focused Skill Development</h3>
+            <p>
+                Skills aligned with real industry demand to help 
+                you become job-ready or freelance-ready.
+            </p>
+        </div>
+
+        <div class="why-card fade-up delay-3">
+            <i class="fas fa-infinity"></i>
+            <h3>Lifetime Recordings Access</h3>
+            <p>
+                Revisit recorded sessions anytime for revision, 
+                practice, and long-term mastery.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<a href="https://wa.me/918639191907" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <p>
+                AutoDigiX is a modern AI Automation & Digital Marketing agency 
+                helping businesses scale with performance marketing, automation 
+                systems, and growth-focused strategies.
+            </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><i class="fas fa-home"></i> <a href="index.html">Home</a></li>
+                <li><i class="fas fa-briefcase"></i> <a href="#">Services</a></li>
+                <li><i class="fas fa-graduation-cap"></i> <a href="courses.html">Courses</a></li>
+                <li><i class="fas fa-user"></i> <a href="about.html">About</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+            <h3>AutoDigiX</h3>
+            <p><i class="fas fa-user-tie"></i> Founder: Praveen Gorla</p>
+            <p><i class="fas fa-envelope"></i> info@autodigix.in</p>
+            <p><i class="fas fa-phone"></i> 8639191907</p>
+
+            <div class="footer-social">
+                <a href="https://www.instagram.com/autodigix/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61585845454471" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/918639191907" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 AutoDigiX. All Rights Reserved.
+    </div>
+
+</footer>

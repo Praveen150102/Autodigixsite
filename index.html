@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoDigiX | AI Automation & Digital Marketing</title>
+
+<!-- Poppins Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#f4f8ff,#e9f6f4,#f7fbff);
+    color:#0A1F44;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 80px;
+    background:white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.logo img{
+    height:70px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#0A1F44;
+    font-weight:600;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00C6B8;
+}
+
+.social-icons a{
+    margin-left:18px;
+    font-size:20px;
+    color:#0A1F44;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:#00C6B8;
+}
+
+/* HERO */
+.hero{
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:52px;
+    font-weight:700;
+    max-width:900px;
+    line-height:1.3;
+    animation:fadeUp 1.2s ease forwards;
+    opacity:0;
+}
+
+.hero span{
+    color:#00C6B8;
+}
+
+.hero p{
+    margin-top:25px;
+    font-size:20px;
+    color:#444;
+    animation:fadeUp 1.6s ease forwards;
+    opacity:0;
+}
+
+.hero-buttons{
+    margin-top:35px;
+    animation:fadeUp 2s ease forwards;
+    opacity:0;
+}
+
+.btn-primary{
+    background:#00C6B8;
+    color:white;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    margin-right:15px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    background:#0A1F44;
+}
+
+.btn-secondary{
+    border:2px solid #0A1F44;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    color:#0A1F44;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.btn-secondary:hover{
+    background:#0A1F44;
+    color:white;
+}
+
+/* Animation */
+@keyframes fadeUp{
+    from{
+        transform:translateY(40px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@media(max-width:768px){
+    header{
+        padding:20px;
+    }
+    .hero h1{
+        font-size:34px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- LOCAL LOGO (IMPORTANT) -->
+   <div class="logo">
+    <h1 style="color:#0A1F44;">Auto<span style="color:#00C6B8;">DigiX</span></h1>
+</div>
+
+    <nav>
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./services.html">Services</a></li>
+<li><a href="./courses.html">Courses</a></li>
+<li><a href="./about.html">About</a></li>
+<li><a href="./contact.html">Contact</a></li>
+</ul>
+</nav>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/autodigix/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61585845454471" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/918639191907" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <h1>
+        <span>AI Automation</span> & <span>Digital Marketing</span><br>
+        That Scales Your Business Professionally
+    </h1>
+
+    <p>
+        Performance Marketing • Lead Generation • Automation Systems • Growth Strategy
+    </p>
+
+    <div class="hero-buttons">
+        <a href="https://wa.me/918639191907" class="btn-primary">Get Free Consultation</a>
+        <a href="#" class="btn-secondary">Explore Services</a>
+    </div>
+
+</section>
+<section class="services">
+
+    <h2 class="section-title">Our Core Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Digital Marketing</h3>
+            <p>Data-driven marketing strategies designed to scale brands and businesses.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-search"></i>
+            <h3>SEO Optimization</h3>
+            <p>Improve rankings, increase traffic, and dominate search engine results.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-robot"></i>
+            <h3>AI Automation</h3>
+            <p>Automated systems that streamline operations and increase efficiency.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fab fa-google"></i>
+            <h3>Google & Meta Ads</h3>
+            <p>High-converting ad campaigns optimized for ROI and lead generation.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Website Development</h3>
+            <p>Modern responsive websites built for performance and conversions.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-users"></i>
+            <h3>Lead Generation</h3>
+            <p>Proven strategies to consistently generate high-quality leads.</p>
+        </div>
+
+    </div>
+
+</section>
+</section>
+<section class="courses">
+
+    <h2 class="section-title">Our Professional Courses</h2>
+
+    <div class="course-container">
+
+        <!-- Digital Marketing Course -->
+        <div class="course-card premium">
+
+            <div class="ribbon">Most Popular</div>
+
+            <div class="price-badge">₹2,999</div>
+
+            <div class="course-img-wrapper">
+                <img src="https://www.webskittersacademy.in/wp-content/uploads/2015/12/Digital-Marketing.png"
+                     alt="Digital Marketing Course">
+            </div>
+
+            <h3>Digital Marketing Mastery</h3>
+            <p class="duration">30 Days Intensive Program</p>
+
+            <ul>
+                <li>✔ Performance Marketing</li>
+                <li>✔ Meta & Google Ads</li>
+                <li>✔ SEO & Lead Generation</li>
+                <li>✔ Internship Opportunity</li>
+                <li>✔ Certification Included</li>
+            </ul>
+
+            <a href="https://rzp.io/rzp/whMcDOtc" 
+   class="course-btn" 
+   target="_blank">
+   Enroll Now
+</a>
+
+        </div>
+
+
+        <!-- Web Development Course -->
+        <div class="course-card premium">
+
+            <div class="price-badge">₹5,999</div>
+
+            <div class="course-img-wrapper">
+                <img src="https://static.vecteezy.com/system/resources/previews/009/298/359/non_2x/3d-illustration-of-web-development-png.png"
+                     alt="Web Development Course">
+            </div>
+
+            <h3>Web Development Program</h3>
+            <p class="duration">30 Days Practical Training</p>
+
+            <ul>
+                <li>✔ HTML, CSS, JavaScript</li>
+                <li>✔ Responsive Website Design</li>
+                <li>✔ Real Project Practice</li>
+                <li>✔ Internship Opportunity</li>
+                <li>✔ Certification Included</li>
+            </ul>
+
+            <a href="https://rzp.io/rzp/dxXNSM2D" 
+   class="course-btn" 
+   target="_blank">
+   Enroll Now
+   </a>
+</div>  
+
+ 
+</section>
+
+<section class="stats">
+
+    <div class="stats-container">
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="5">0</h2>
+            <p>Years Experience</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="100">0</h2>
+            <p>Happy Clients</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="100">0</h2>
+            <p>Students Trained</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Websites Designed</p>
+        </div>
+
+    </div>
+</section>
+<section class="contact">
+
+    <div class="contact-wrapper">
+
+        <h2 class="contact-title">Contact Us</h2>
+
+        <form action="contact.php" method="POST" class="contact-form">
+
+            <div class="input-group">
+                <input type="text" name="name" required>
+                <label>Your Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" required>
+                <label>Your Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="tel" name="phone" required>
+                <label>Your Phone</label>
+            </div>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+<script src="assets/js/script.js"></script>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <p>
+                AutoDigiX is a modern AI Automation & Digital Marketing agency 
+                helping businesses scale with performance marketing, automation 
+                systems, and growth strategies.
+            </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><i class="fas fa-home"></i> <a href="index.html">Home</a></li>
+                <li><i class="fas fa-briefcase"></i> <a href="#">Services</a></li>
+                <li><i class="fas fa-graduation-cap"></i> <a href="courses.html">Courses</a></li>
+                <li><i class="fas fa-user"></i> <a href="#">About</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+            <h3>AutoDigiX</h3>
+            <p><i class="fas fa-user-tie"></i> Founder: Praveen Gorla</p>
+            <p><i class="fas fa-envelope"></i> info@autodigix.in</p>
+            <p><i class="fas fa-phone"></i> 8639191907</p>
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 AutoDigiX. All Rights Reserved.
+    </div>
+
+</footer>
+<a href="https://wa.me/918639191907" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>

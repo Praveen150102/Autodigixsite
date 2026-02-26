@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | AutoDigiX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+
+        body{
+            font-family:'Poppins',sans-serif;
+            background:linear-gradient(135deg,#f4f8ff,#e9f6f4,#f7fbff);
+        }
+
+        /* HERO */
+        .contact-hero{
+            padding:140px 20px 80px;
+            text-align:center;
+        }
+
+        .contact-hero h1{
+            font-size:56px;
+            font-weight:700;
+            color:#0A1F44;
+        }
+
+        /* MAIN SECTION */
+        .contact-main{
+            padding:80px;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:60px;
+            background:white;
+        }
+
+        .contact-form-box{
+            background:#f9fcff;
+            padding:50px;
+            border-radius:20px;
+            box-shadow:0 15px 40px rgba(0,0,0,0.08);
+        }
+
+        .contact-form-box h3{
+            margin-bottom:30px;
+            font-size:26px;
+            color:#0A1F44;
+        }
+
+        .contact-form-box input{
+            width:100%;
+            padding:15px;
+            margin-bottom:20px;
+            border-radius:8px;
+            border:1px solid #ccc;
+            font-size:15px;
+            transition:0.3s;
+        }
+
+        .contact-form-box input:focus{
+            border-color:#00C6B8;
+            box-shadow:0 0 0 3px rgba(0,198,184,0.1);
+            outline:none;
+        }
+
+        .contact-form-box button{
+            width:100%;
+            padding:15px;
+            border:none;
+            border-radius:30px;
+            background:#00C6B8;
+            color:white;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .contact-form-box button:hover{
+            background:#0A1F44;
+            transform:translateY(-3px);
+        }
+
+        .map-box iframe{
+            width:100%;
+            height:100%;
+            min-height:420px;
+            border-radius:20px;
+        }
+
+        /* ABOUT SECTION */
+        .about-contact{
+            padding:120px 80px;
+            background:#f4f8ff;
+            text-align:center;
+        }
+
+        .about-contact h2{
+            font-size:38px;
+            margin-bottom:30px;
+            color:#0A1F44;
+        }
+
+        .about-contact p{
+            max-width:850px;
+            margin:auto;
+            font-size:17px;
+            color:#444;
+            line-height:1.8;
+        }
+
+        /* FADE ANIMATION */
+        .fade-element{
+            opacity:0;
+            transform:translateY(50px);
+            transition:all 0.8s ease;
+        }
+
+        .fade-element.show{
+            opacity:1;
+            transform:translateY(0);
+        }
+
+        .delay-1{ transition-delay:0.2s; }
+        .delay-2{ transition-delay:0.4s; }
+        .delay-3{ transition-delay:0.6s; }
+
+        /* Responsive */
+        @media(max-width:992px){
+            .contact-main{
+                grid-template-columns:1fr;
+                padding:60px 20px;
+            }
+
+            .about-contact{
+                padding:80px 20px;
+            }
+
+            .contact-hero h1{
+                font-size:40px;
+            }
+        }
+        /* CONTACT PAGE HEADER TEXT BLACK */
+
+header nav a {
+    color: #000000 !important;
+}
+
+header nav a:hover {
+    color: #000000 !important;
+}
+
+header .social-icons a {
+    color: #000000 !important;
+}
+
+header .social-icons a:hover {
+    color: #000000 !important;
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+        <h1 style="color:#0A1F44;">Auto<span style="color:#00C6B8;">DigiX</span></h1>
+    </div>
+
+  <nav>
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./services.html">Services</a></li>
+<li><a href="./courses.html">Courses</a></li>
+<li><a href="./about.html">About</a></li>
+<li><a href="./contact.html">Contact</a></li>
+</ul>
+</nav>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/autodigix/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61585845454471" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/918639191907" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+</header>
+
+<!-- HERO -->
+<section class="contact-hero">
+    <h1 class="fade-element delay-1">Get In Touch</h1>
+</section>
+
+<!-- CONTACT MAIN -->
+<section class="contact-main">
+
+    <div class="contact-form-box fade-element delay-2">
+        <h3>Send Us a Message</h3>
+
+        <form action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="map-box fade-element delay-3">
+        <iframe 
+            src="https://www.google.com/maps?q=Visakhapatnam&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about-contact">
+    <h2 class="fade-element delay-1">About AutoDigiX</h2>
+    <p class="fade-element delay-2">
+        AutoDigiX is a results-driven AI Automation & Digital Marketing agency helping businesses scale 
+        through performance marketing, high-converting ad campaigns, automation systems, and 
+        growth-focused strategies. We build modern responsive websites, generate quality leads, 
+        and create scalable digital systems designed for long-term success.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <p>
+                AutoDigiX is a modern AI Automation & Digital Marketing agency 
+                helping businesses scale with performance marketing and automation systems.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+    <h3>AutoDigiX</h3>
+
+    <p><i class="fas fa-user"></i> Founder: Praveen Gorla</p>
+    <p><i class="fas fa-envelope"></i> info@autodigix.in</p>
+    <p><i class="fas fa-phone"></i> 8639191907</p>
+
+    <div class="footer-social">
+        <a href="https://www.instagram.com/autodigix/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61585845454471" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/918639191907" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 AutoDigiX. All Rights Reserved.
+    </div>
+
+</footer>
+
+<!-- FADE JS -->
+<script>
+    const fadeElements = document.querySelectorAll('.fade-element');
+
+    function revealElements() {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        fadeElements.forEach(el => {
+            const elementTop = el.getBoundingClientRect().top;
+
+            if (elementTop < triggerBottom) {
+                el.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealElements);
+    window.addEventListener('load', revealElements);
+</script>
+<a href="https://wa.me/918639191907" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
